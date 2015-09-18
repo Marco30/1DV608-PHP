@@ -14,5 +14,5 @@ $content = $control->doLogin(); // kör min login funktion i Controller klassen
 
 $view = new LayoutView();  // skapar ett HTMLView 
 
-$view->showHTML($content);// kör min showHTML funktion i klassen HTMLView
+$view->showHTML($content);// kör min showHTML funktion i klassen LayoutView
 
