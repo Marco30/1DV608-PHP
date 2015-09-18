@@ -4,6 +4,9 @@
 /*error_reporting(E_ALL);
 ini_set('display_errors', 'On');*/
 
+//Användarnamn: Admin
+//Lösenord: M
+
 //ladar in min classer jag ska använda i min applikation
 require_once("controller/LoginController.php");
 require_once("view/LayoutView.php");
