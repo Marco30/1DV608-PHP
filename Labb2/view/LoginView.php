@@ -109,7 +109,7 @@ class LoginView
 	}
 	
 	
-	public function showLoginSuccessful($message)// HTML Innehållet som visas om man inte är inloggad
+	public function showLoginSuccessful($message)// HTML Innehållet som visas om man är inloggad
 	{
 		
 			$content = '
