@@ -15,8 +15,8 @@ class TextcollectionView
 		$this->sessionHelper = new \helper\SessionHelper();
 	}
 	
-//Hämtar TextcollectionID från url, return varierar 
-	public function getTextcollectionID() 
+
+	public function getTextcollectionID() //Hämtar TextcollectionID från url, return varierar 
 	{
 		if (isset($_GET[self::$getLocation])) 
 		{

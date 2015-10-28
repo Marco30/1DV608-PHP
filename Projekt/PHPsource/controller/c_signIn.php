@@ -29,7 +29,7 @@
       {
 			
 	       
-	        if ($this->view->SignOutAttempt()) // Kontrollera om användaren tryckte logga ut
+	        if ($this->view->SignOutAttempt()) //Kontrollera om användaren tryckte logga ut
 	        {
 	        	         
 			  

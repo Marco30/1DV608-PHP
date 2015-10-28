@@ -13,7 +13,7 @@
     }
 
 
-    public function isCookieSet($name) // Kontrollerar om cookien är satt
+    public function isCookieSet($name) //Kontrollerar om cookien är satt
     {
       if (isset($_COOKIE[$name]))
         return true;

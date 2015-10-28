@@ -23,7 +23,7 @@
     {
     		if($this->view->SignUpAttempt()) 
     		{  
-    			if ($this->addUser()) // true om användaren har lagt till
+    			if ($this->addUser()) //true om användaren har lagt till
     			{ 
     				\view\NavigationView::RedirectToSignUp();
     			}

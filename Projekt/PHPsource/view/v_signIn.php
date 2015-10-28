@@ -44,8 +44,8 @@
 		return false;   
 	}
 		
-		// kontrollerar om användar har tryck på logan out
-	public function SignOutAttempt() 
+	
+	public function SignOutAttempt() // kontrollerar om användar har tryck på logan out
 	{  
 		if (isset($_GET[self::$getAction])) 
 		{

@@ -72,8 +72,10 @@ class SpokenWordView
 	}
 	
 //hämtar ut namnet från formulär här ovan
-	public function getName() {
-		if (isset($_POST[self::$name])) {
+	public function getName() 
+    {
+		if (isset($_POST[self::$name])) 
+        {
 			return $_POST[self::$name];
 		}
 		return null;

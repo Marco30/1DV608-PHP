@@ -1,7 +1,8 @@
 <?php
 namespace model;
 
-class SpokenWordList {
+class SpokenWordList 
+{
 	private $SpokenWord;
 	
 	public function __construct() 

@@ -20,7 +20,7 @@ abstract class Repository
 	}
 	
 	
-	public function query($sql, $params = null , $lastID = false) // vad som händer här 
+	public function query($sql, $params = null , $lastID = false)// vad som händer här 
 	{  
 		$db = $this -> connection();
 

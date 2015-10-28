@@ -13,7 +13,6 @@ class HTMLBody
 
 	public function setBody($body) 
 	{
-		
 		$this->body = $body;
 	}
 	

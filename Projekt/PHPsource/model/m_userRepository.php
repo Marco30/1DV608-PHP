@@ -46,7 +46,7 @@ class UserRepository extends \model\DAL\Repository
 		}
 	}
 	
-	public function find($username, $password)// går igenom DB
+	public function find($username, $password)//går igenom DB
 	{ 
 		 
 		$db = $this->connection();

@@ -11,7 +11,7 @@
 
 
    
-    public function getAlert() // Få en varning från session larmsystem
+    public function getAlert() //Få en varning från session larmsystem
     {
       if (isset($_SESSION[self::$sessionAlert])) 
       {

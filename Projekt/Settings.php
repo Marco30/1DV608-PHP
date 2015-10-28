@@ -1,6 +1,7 @@
 <?php
 
-class Settings {
+class Settings 
+{
 	public static $DB_USERNAME = "paradiseblue_se";
 	public static $DB_PASSWORD = '66Q5Dz7W';
 	public static $DB_CONNECTION = 'mysql:host=paradiseblue.se.mysql;dbname=paradiseblue_se';

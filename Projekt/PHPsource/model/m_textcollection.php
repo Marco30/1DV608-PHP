@@ -38,7 +38,7 @@ class Textcollection
 	}
 	
 
-	public function setTextcollectionID($TextcollectionID) // TODO check if used in repository
+	public function setTextcollectionID($TextcollectionID) //TODO check if used in repository
 	{  
 		$this->TextcollectionID = $TextcollectionID;
 	}

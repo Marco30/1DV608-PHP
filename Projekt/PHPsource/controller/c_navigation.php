@@ -36,7 +36,7 @@ class Navigation
 
 			
 		
-			if ($view->getAction() == $view::$actionSignUp) // Kontrollerar om användaren vill att registrera sig
+			if ($view->getAction() == $view::$actionSignUp) //Kontrollerar om användaren vill att registrera sig
 			{
 				$signUpController = new SignUp();
 				$this->htmlBody->setBody($signUpController->viewPage());

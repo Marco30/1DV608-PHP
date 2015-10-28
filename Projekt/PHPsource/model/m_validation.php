@@ -1,5 +1,6 @@
 <?php
 namespace model;
+
 require_once("./PHPsource/helper/sessionHelper.php");
 
 class Validation

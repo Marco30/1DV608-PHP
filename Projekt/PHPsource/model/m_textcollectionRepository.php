@@ -34,7 +34,7 @@ class TextcollectionRepository extends DAL\Repository {
 		$this->sessionHelper = new \helper\SessionHelper();
 	}
 	
-	public function add($TextcollectionName, $username) // lägger till i textcollection tabbelen
+	public function add($TextcollectionName, $username) //lägger till i textcollection tabbelen
 	{
 	
 			 	$db = $this->connection();

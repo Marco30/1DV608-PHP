@@ -1,5 +1,4 @@
 <?php
-
 namespace model;
 
 require_once('m_pw.php');

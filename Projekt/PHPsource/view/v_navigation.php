@@ -30,8 +30,8 @@ class NavigationView
 	private $SpokenWordMenu = "";
 	
 
-     // visar menyn när man inte är in logad
-	public function getBaseMenuStart() 
+  
+	public function getBaseMenuStart() // visar menyn när man inte är in logad
 	{
 		$html = "<div id='menu'>
 					<ul>"; 	

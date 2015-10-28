@@ -36,7 +36,7 @@ class TextcollectionController
 		
 		$iTextcollectionID = $this->TextcollectionView->getTextcollectionID(); 
 		
-		//save instrumentID in session
+         //save instrumentID in session
 		$this->sessionHelper->setHTextcollectionID($iTextcollectionID);
 		
 		$iTextcollectionID = $this->sessionHelper->getHTextcollectionID($iTextcollectionID);

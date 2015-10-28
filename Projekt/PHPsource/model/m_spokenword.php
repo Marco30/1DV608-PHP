@@ -22,7 +22,7 @@ class SpokenWord
 		
 	}
 	
-	public function equals(SpokenWord $other) // används det här 
+	public function equals(SpokenWord $other) //används det här 
 	{ 
 		return (
 			$this->getName() == $other->getName() &&

@@ -1,5 +1,6 @@
 <?php
 namespace model;
+
 //Dependencies
 require_once ('./PHPsource/model/DAL/Repository.php');
 require_once ('./PHPsource/model/m_spokenwordList.php');

@@ -87,8 +87,8 @@ namespace view;
 	  	$un = $_POST[self::$username];
 		$pw = $_POST[self::$password];		
 	  		
-	  	// kontrollerar att användarnamn/lösenord inte är toma
-		 if (empty($un)) 
+	  
+		 if (empty($un)) // kontrollerar att användarnamn/lösenord inte är toma
 		 {
 		      $this->errorMessage ="Användarnamnet har för få tecken. Minst 3 tecken <br /> ";
 			

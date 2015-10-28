@@ -13,7 +13,8 @@
     private static $username = "SignIn::Username";
 	private static $password = "SignIn::Password";
 
-    public function __construct() {
+    public function __construct() 
+    {
       $this->cookieStorage = new \helper\CookieStorage();
 	  $this->userRepository = new \model\UserRepository();
       $this->sessionHelper = new \helper\SessionHelper();

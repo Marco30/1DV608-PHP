@@ -5,7 +5,6 @@
 ini_set('display_errors', 'On');*/
 
 //ladar in min classer jag ska använda i min applikation
- 
 require_once("PHPsource/view/HTMLView.php");
 require_once("PHPsource/controller/c_navigation.php");
 require_once("PHPsource/view/v_navigation.php");

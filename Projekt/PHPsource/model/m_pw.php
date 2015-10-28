@@ -11,20 +11,24 @@ class Password
 	private $pw;
 	private $sessionHelper;
 
-	public function __construct($password) {
+	public function __construct($password) 
+    {
 		$this->sessionHelper = new \helper\SessionHelper();
 			
-		if ($this->validatePw($password)) {
+		if ($this->validatePw($password)) 
+        {
 			$this->pw = $password;
 		}
 		
 	}
 	
-	public function getHashedPassword(){
+	public function getHashedPassword()
+    {
 		return $this->sessionHelper->encryptString($this->pw);
 	}
 	
-	public function validatePw($password) {
+	public function validatePw($password)
+    {
 		
 		if (mb_strlen($password) < self::minPwLen) //extern validering för extra säkerhet
 		{ 

@@ -31,7 +31,7 @@ class TextcollectionList
 	
 
 
-	public function contains(Textcollection $iTextcollection)// kotrolläara 
+	public function contains(Textcollection $iTextcollection)// kotrollera 
 	{  // TODO is this used?
 		foreach($this->TextcollectionList as $key => $owner) 
 		{

@@ -6,7 +6,7 @@
     private static $path = "db/";
 
     
-    public function getFileContent($fileName) // Får filen innehåll
+    public function getFileContent($fileName)// Får filen innehåll
     {
       if (file_exists(self::$path . $fileName)) 
       {

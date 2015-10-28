@@ -44,7 +44,8 @@ class SpokenWordController
 			
 			$iTextcollectionID = $this->sessionHelper->getHTextcollectionID();
 			
-			if (empty($iTextcollectionID)) {
+			if (empty($iTextcollectionID)) 
+            {
 				$iTextcollectionID = $this->TextcollectionView->getTextcollectionID(); 
 				
 				//save instrumentID in session
