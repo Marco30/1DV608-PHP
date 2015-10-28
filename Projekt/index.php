@@ -24,5 +24,5 @@ $signUpController = new \controller\signUp();
 
 $htmlBody = $navigation->doControll(); 
 
-$view->echoHTML("Music Logbook - Home", $htmlBody->getBody(), $htmlBody->getMenu(), $htmlBody->getScript());
+$view->echoHTML("Spoken Word - Home", $htmlBody->getBody(), $htmlBody->getMenu(), $htmlBody->getScript());
 

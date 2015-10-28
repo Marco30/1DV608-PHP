@@ -49,7 +49,7 @@ class TextcollectionView
 		return NULL;
 	}
 	
-	// Hämtar formulär som ska användas när du lägger till ett nytt Textcollection.
+	// Hämtar formulär som ska användas när du lägger till ett nytt Textcollection
 	public function getForm() 
 	{
 		
