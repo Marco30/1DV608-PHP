@@ -49,11 +49,11 @@ class TextcollectionView
 		return NULL;
 	}
 	
-	// Hämtar formulär som ska användas när du lägger till ett nytt Textcollection
+	// Hämtar formulär som ska användas när du lägger till ett nytt Textcollection.
 	public function getForm() 
 	{
 		
-		$html = "<div id='addInstrument'>";
+		$html = "<div id='addTextCollection'>";
 		$html .= "<h1>Add a Spoken Word Collection</h1>";
 		$html .= "<form method='post' action='?action=".NavigationView::$actionAddTextcollection."'>";
 		$html .= "<label for='" . self::$name . "'>Name: </label>";
@@ -79,7 +79,7 @@ class TextcollectionView
 		$html .= "<a href='?".NavigationView::$action."=".NavigationView::$actionDeleteTextcollection."&amp;".self::$getLocation."=" .
 					urlencode($iTextcollection->getTextcollectionID()) ."' class = 'deleteBtn'> Delete Spoken Word Collection</a>";  // TODO- FIX REALLY NEEDS confirm
 		
-		$html .= "<div id='songList'>";
+		$html .= "<div id='SpokenWordList'>";
 		
 		// add Spoken Word text bouton
 		$html .= "<a href='?".NavigationView::$action."=".NavigationView::$actionAddSpokenWord."&amp;".self::$getLocation."=" .
@@ -107,7 +107,7 @@ class TextcollectionView
 
 		$html = "<h1>My Spoken Word collections</h1>";
 		
-		$html .= "<div id='showAllInstruments'>";
+		$html .= "<div id='showAllTextCollection'>";
 		
 		//fi satsen visar bara lägt Textcollection knappen om det inte finns Textcollection annars körs else och formuläret 
 		if (count($iTextcollectionList->toArray()) > 0) 
@@ -116,14 +116,14 @@ class TextcollectionView
 		}
 		if (count($iTextcollectionList->toArray()) == 0) 
 		{
-			$html .="<div id='addInstrumentIfzero'><p>You have no Spoken Word collection</p>";
+			$html .= "<div id='addTextColectionIfzero'><p>You have no Spoken Word collection</p>";
 			$html .= $this->getForm() . "</div>";
 		}
 		else 
 		{
 		
 			$html .= "<form method='post' action='?action=".NavigationView::$actionSetMainTextcollection."'>";
-			$html .= "<ul id='instrumentlist'>";
+			$html .= "<ul id='TextCollectionlist'>";
 			
 			foreach ($iTextcollectionList->toArray() as $iTextcollection) 
 			{

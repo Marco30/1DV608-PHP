@@ -81,7 +81,7 @@
 	  $html .= "<div class='successMessage'><p>".$this->sessionHelper->getAlert() ."</p></div>";
 	  $html .= "<a href='?".self::$getAction."=".NavigationView::$actionSignUp."' id='signUp'>Sign up</a>"; 
 	  $html .= "<a href='?".self::$getAction."=".self::$actionSignIn."' id='signIn'>Sign in</a>";  
-	  $html .= "<div id='musicbar'><div id='treble'></div><ul>
+	  $html .= "<div id='Textbar'><div id='treble'></div><ul>
 	  			<li>Keep track of your Spoken Word Collection</li>
 	  			</ul></div>";  
 	  $html .= "</div>";

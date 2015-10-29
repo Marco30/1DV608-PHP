@@ -105,7 +105,7 @@ border-radius: 25px;
 	margin-left:-1.5em;
 }
 
-#menu #noInstruments {
+#menu #notextcollections {
 
 	font-weight:normal;
 	margin-top:15px;
@@ -113,7 +113,7 @@ border-radius: 25px;
 	font-style:italic;
 }
 
-#menu #mainInstrumentLi {
+#menu #mainInstrument Li {
 	font-style:italic;
 	height:15px;
 	margin-bottom:-10px;
@@ -149,7 +149,7 @@ border-bottom: 7px solid #FFF;
 
 /**   SONGLIST   **
 ------------------------------------*/
-#menu #instrumentBtn {
+#menu #textcollectionsBtn {
 	background: #2A81D7 none repeat scroll 0% 0%;
 	font-size:1.3em;
 	padding-left:10px;
@@ -157,11 +157,11 @@ border-bottom: 7px solid #FFF;
 border-bottom: 5px solid #333;
 }
 
-#instrumentBtn {
+#textcollectionsBtn {
 	margin-top:15px;
 }
 
-#songMenu {
+#SpokenWordMenu {
 
 	margin-bottom:15px;
 	width:100%;
@@ -169,18 +169,18 @@ border-bottom: 5px solid #333;
 
 }
 
-#songMenu li {
+#SpokenWordMenu li {
 	background: #E1E5ED none repeat scroll 0% 0%;
 border-bottom: 5px solid #333;
 	width:100%;
 }
 
-#songMenu a {
+#SpokenWordMenu a {
 	color:#333;
 	width:100%;
 }
 
-#songList a {
+#SpokenWordList a {
 	float:left;
 	color:#FFF;
 	background: #3992E9 none repeat scroll 0% 0%; 
@@ -193,7 +193,7 @@ border-bottom: 5px solid #333;
 	width:200px;
 	font-weight:bold;
 }
-#songList ul {
+#SpokenWordList ul {
 	border-top: 1px solid #333333;
 	float:left;
 	list-style-position: inside;
@@ -205,7 +205,7 @@ border-bottom: 5px solid #333;
 	margin-bottom:20px;
 
 }
-#songList p {
+#SpokenWordList p {
 	line-height:25px;
 	font-style: italic;
 }
@@ -214,7 +214,7 @@ border-bottom: 5px solid #333;
 /**   INSTRUMENT LIST   **
 ------------------------------------*/
 
-#showAllInstruments #addButton {
+#showAllTextCollection #addButton {
 	float:left;
 	color:#FFF;
 	
@@ -230,22 +230,22 @@ background: #3992E9 none repeat scroll 0% 0%;
 
 }
 
-#showAllInstruments h1 {
+#showAllTextCollection h1 {
 	display:block;
 	float:left;
 
 }
 
-#showAllInstruments #radioBtn {cursor:pointer;}
+#showAllTextCollection #radioBtn {cursor:pointer;}
 
 /** if user has no instruments **/
-#addInstrumentIfzero {
+#addTextColectionIfzero {
 	clear:left;
 }
 
 
 /** if user has instruments **/
-#instrumentlist {
+#TextCollectionlist {
 	float:left;
 	list-style-position: inside;
 	width:100%;
@@ -255,12 +255,12 @@ background: #3992E9 none repeat scroll 0% 0%;
 	margin:0;
 }
 
-#instrumentlist input {
+#TextCollectionlist input {
 	float:right;
 	margin-top:-95px;
 }
 
-#instrumentlist a {
+#TextCollectionlist a {
 text-align: left;
 font-weight: bold;
 padding: 10px 30px 0px 20px;
@@ -269,15 +269,15 @@ max-width: 600px;
 color: #FFF;
 }
 
-#instrumentlist .headline {
+#TextCollectionlist .headline {
 	font-size:1.5em;
 }
-#instrumentlist .time {
+#TextCollectionlist .time {
 	padding:13px;
 	font-weight:normal;
 	line-height:35px;
 }
-#instrumentlist p {
+#TextCollectionlist p {
 	text-align:left;
 	font-weight:normal;
 	font-size:1.2em;
@@ -286,7 +286,7 @@ color: #FFF;
 	margin-bottom:0;
 }
 
-#instrumentlist li {
+#TextCollectionlist li {
 list-style-type: none;
 display: block;
 float: left;
@@ -315,19 +315,19 @@ footer, header, hgroup, menu, nav, section{ display: block; }
 
 /**    FORMS       **
 -------------------------------------------------------------------*/
-#addInstrument , #addSong {
+#addTextCollection, #addSpokenWord {
 	width:100%;
 	height:100%;
 	padding-left:70px;
 
 }
-#addInstrument input , #addSong input{
+#addTextCollection input , #addSpokenWord input{
 	border:1px solid #333;
 	cursor:text;
 
 }
 
-#addInstrument h1 , #addSong h1{
+#addTextCollection h1 , #addSpokenWord h1{
 	text-align:left;
 }
 
@@ -337,7 +337,7 @@ footer, header, hgroup, menu, nav, section{ display: block; }
 	margin-bottom:25px;
 }
 
-#signUpView #submit , #signInView #submit , #addInstrument #submit , #addSong #submit {
+#signUpView #submit , #signInView #submit , #addTextCollection #submit , #addSpokenWord #submit {
 	float:left;
 	color:#FFF;
 	border-radius:5px;
@@ -355,7 +355,7 @@ footer, header, hgroup, menu, nav, section{ display: block; }
 
 /**   INSTRUMENT OVERVIEW      **
 -------------------------------------------------------------------*/
-.deleteBtn, .deleteBtnSong  {
+.deleteBtn, .deleteBtnSpokenWord {
 display: block;
 float: right;
 text-align: center;
@@ -371,7 +371,7 @@ font-weight: bold;
 
 }
 
-.chooseMainInstrument, .mainInstrumentDefault {
+.chooseMainTextC, .mainTextDefault {
 	display:block;
 	float:right;
 	margin-right:70px;
@@ -379,17 +379,17 @@ font-weight: bold;
 	font-weight:bold;
 	margin-top:50px;
 }
-.mainInstrumentDefault {
+.mainTextDefault {
 	margin-right:100px;
 }
 
 /**   SONG OVERVIEW      ** TODO-fix textarea!
 -------------------------------------------------------------------*/
-#songOverview {
+#SpokenWordOverview {
 
 	width:500px;
 }
-#songOverview h1 {
+#SpokenWordOverview h1 {
 line-height: 17px;
 padding: 10px;
 display: block;
@@ -399,7 +399,7 @@ border-radius: 5px;
 height: 18px;
 }
 
-.deleteBtnSong {
+.deleteBtnSpokenWord {
 
 overflow: hidden;
 display: block;
@@ -414,10 +414,10 @@ font-size: 16px;
 font-weight: bold;
 }
 
-#instrumentBreadcrum {
+#TextBreadcrum {
 padding: 10px;
 line-height: 25px;
-width: 73px;
+width: 150px;
 color: #FFF;
 font-weight: bold;
 background: #3992E9 none repeat scroll 0% 0%;
@@ -425,34 +425,11 @@ border-radius: 12px;
 font-size: 29px;
 }
 
-#practiceTime {
-	clear:both;
-}
-
-/** TIMER **/
-
-#startTimer, #stopTimer{
-	display:block;
-	width:200px;
-	height:65px;
-	font-size:1.3em;
-	background: url('../images/buttons.png') no-repeat;
-	text-indent:200%;
-	white-space:nowrap;
-	overflow:hidden;
-	cursor:pointer
-}
-
-#startTimer {
-	background-position:0 0; }
-#stopTimer {
-	background-position:0 -65px;
-}
 
 
 /** NOTES **/
 
-#songOverview h3 {
+#SpokenWordOverview h3 {
 	display:block;
 	clear:left;
 	float:left;
@@ -463,7 +440,7 @@ font-size: 29px;
 	margin: 16px -6px -23px -16px;
 }
 
-#songOverview .submit {
+#SpokenWordOverview .submit {
 	width:110px;
 	float:right;
 	clear:none;
@@ -562,7 +539,7 @@ line-height: 10px;
 font-size: 1em;
 }
 
-#musicbar {
+#Textbar {
 	width:90%;
 	min-width:600px;
 	height:300px;
@@ -573,14 +550,14 @@ font-size: 1em;
 }
 
 
-#musicbar ul {
+#Textbar ul {
 	height:100%;
 	padding:50px;
 	padding-top:50px;
 	font-weight:bold;
 	margin:0 auto;
 }
-#musicbar li {
+#Textbar li {
 width: 90%;
 text-align: right;
 font-size: 1.3em;
@@ -591,7 +568,7 @@ padding: 0px 60px 10px 10px;
 margin: -41px 211px 0px -17px;
 }
 
-#musicbar li:nth-child(even) {
+#Textbar li:nth-child(even) {
 	font-weight:normal;
 	color:#E95D39;
 }

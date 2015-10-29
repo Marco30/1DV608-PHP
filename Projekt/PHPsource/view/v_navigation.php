@@ -74,14 +74,14 @@ class NavigationView
 		$menu = $view->getTextcollectionButton($iTextcollection);
 		
 		if (empty($SpokenWordArray)) {
-			$menu .= "<li id='noInstruments'>You have no Chapter <br /> in this Collections</li>";
+			$menu .= "<li id='notextcollections'>You have no Chapter <br /> in this Collections</li>";
 		}
 		
 		// läg till spoken word knap 
 			$menu .= "<li><a href='?".self::$action."=".self::$actionAddSpokenWord."&amp;".TextcollectionView::$getLocation."=" .
 					urlencode($iTextcollection->getTextcollectionID())."'>Add Chapter</a></li>";
 					
-		$menu .= "<li><ul id='songMenu'>";
+		$menu .= "<li><ul id='SpokenWordMenu'>";
 		foreach($SpokenWordArray as $iSpokenWord) {
 			$menu .= "<li><a href='?".NavigationView::$action."=".NavigationView::$actionShowSpokenWord;
 			$menu .= "&amp;".TextcollectionView::$getLocation."=" .
@@ -127,14 +127,14 @@ class NavigationView
 	public static function getTextcollectionButton($iTextcollection) 
 	{
 		$button ="<li><a href='?action=".NavigationView::$actionShowTextcollection."&amp;".TextcollectionView::$getLocation."=" .
-					urlencode($iTextcollection->getTextcollectionID()) ."' id='instrumentBtn'>" .
+					urlencode($iTextcollection->getTextcollectionID()) ."' id='textcollectionsBtn'>" .
 					$iTextcollection->getName()."</a></li>";
 		return $button;
 	}
 	
 	public static function getTextcollectionBreadCrum($iTextcollection) {
 		$button ="<a href='?action=".NavigationView::$actionShowTextcollection."&amp;".TextcollectionView::$getLocation."=" .
-					urlencode($iTextcollection->getTextcollectionID()) ."' id='instrumentBreadcrum'>" .
+					urlencode($iTextcollection->getTextcollectionID()) ."' id='TextBreadcrum'>" .
 					$iTextcollection->getName()."</a>";
 		return $button;	
 	}

@@ -58,7 +58,7 @@ class SpokenWordView
 	public function getForm(\model\Textcollection $owner) 
 	{
 		$iTextcollectionID = $owner->getTextcollectionID();
-		$html = "<div id='addSong'>";
+		$html = "<div id='addSpokenWord'>";
 		$html .= "<h1>Add Spoken Word to ". $owner->getName()."</h1>";
 		$html .= "<form action='?action=".NavigationView::$actionAddSpokenWord."' method='post'>";
 		$html .= "<input type='hidden' name='".self::$TextcollectionID."' value='$iTextcollectionID' />";
@@ -100,8 +100,8 @@ class SpokenWordView
 		
 		//ta bort knap
 		$html = "<a href='?".NavigationView::$action."=".NavigationView::$actionDeleteSpokenWord."&amp;".self::$getLocation."=" .
-					urlencode($iSpokenWord->getSpokenWordID()) ."' class='deleteBtnSong '> Delete Spoken Word Chapter </a>";
-		$html .= "<div id='songOverview'>";
+					urlencode($iSpokenWord->getSpokenWordID()) ."' class='deleteBtnSpokenWord'> Delete Spoken Word Chapter </a>";
+		$html .= "<div id='SpokenWordOverview'>";
 		$html .=  $view->getTextcollectionBreadCrum($iTextcollection);
 		$html .= '<h1>' . $iSpokenWord->getName() . '</h1>';
 		
